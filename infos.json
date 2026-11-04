@@ -1,0 +1,231 @@
+data = {
+  "metadata": {
+    "title": "Évolution des supports et modes d'écoute de la musique",
+    "subtitle": "Repères historiques de 1877 à 2026",
+    "language": "fr",
+    "period": {"start": 1877, "end": 2026},
+    "scope": "Chronologie internationale indicative",
+    "description": "Jeu de données de synthèse pour une datavisualisation sur l'évolution des supports d'enregistrement, de distribution et des modes d'écoute de la musique.",
+    "methodology": "Les dates sont des repères historiques (invention, lancement ou démocratisation) et non des mesures de parts de marché. Les périodes de popularité sont approximatives et peuvent varier selon les pays.",
+    "last_updated": "2026-11-04"
+  },
+  "items": [
+    {
+      "id": "phonograph_cylinder",
+      "name": "Cylindre phonographique",
+      "category": "support_physique",
+      "medium": "analogique",
+      "introduced": 1877,
+      "popular_from": 1890,
+      "peak_period": "1890-1910",
+      "decline_period": "1910-1920",
+      "status_2026": "historique",
+      "description": "Premier support commercial permettant d'enregistrer et de reproduire du son.",
+      "milestones": [{"year": 1877, "event": "Thomas Edison présente le phonographe."}]
+    },
+    {
+      "id": "shellac_78rpm",
+      "name": "Disque 78 tours (shellac)",
+      "category": "support_physique",
+      "medium": "analogique",
+      "introduced": 1890,
+      "popular_from": 1910,
+      "peak_period": "1920-1950",
+      "decline_period": "1950-1960",
+      "status_2026": "collection",
+      "description": "Disque à lecture rapide, souvent fabriqué en gomme-laque, utilisé avant la généralisation du microsillon.",
+      "milestones": [{"year": 1890, "event": "Développement des disques plats enregistrés."}, {"year": 1948, "event": "Le microsillon 33 tours contribue au remplacement progressif du 78 tours."}]
+    },
+    {
+      "id": "vinyl",
+      "name": "Disque vinyle (33 et 45 tours)",
+      "category": "support_physique",
+      "medium": "analogique",
+      "introduced": 1948,
+      "popular_from": 1950,
+      "peak_period": "1960-1980",
+      "decline_period": "1985-2000",
+      "revival_period": "2008-2026",
+      "status_2026": "toujours commercialisé",
+      "description": "Disque microsillon analogique, devenu un format majeur pour les albums et les singles.",
+      "milestones": [{"year": 1948, "event": "Lancement du LP 33 tours par Columbia."}, {"year": 1949, "event": "Lancement du 45 tours par RCA Victor."}, {"year": 2008, "event": "Le marché du vinyle connaît un regain d'intérêt dans plusieurs pays."}]
+    },
+    {
+      "id": "reel_to_reel",
+      "name": "Bande magnétique / bobine",
+      "category": "support_physique",
+      "medium": "magnetique",
+      "introduced": 1930,
+      "popular_from": 1950,
+      "peak_period": "1950-1970",
+      "decline_period": "1970-1980",
+      "status_2026": "usage spécialisé",
+      "description": "Bande magnétique utilisée pour l'enregistrement professionnel et certaines écoutes domestiques.",
+      "milestones": [{"year": 1935, "event": "Développement des premiers magnétophones à bande modernes."}]
+    },
+    {
+      "id": "compact_cassette",
+      "name": "Cassette audio compacte",
+      "category": "support_physique",
+      "medium": "magnetique",
+      "introduced": 1963,
+      "popular_from": 1975,
+      "peak_period": "1980-1990",
+      "decline_period": "1995-2005",
+      "revival_period": "2010-2026",
+      "status_2026": "usage de niche",
+      "description": "Support magnétique compact, associé à l'écoute portable et aux compilations personnelles.",
+      "milestones": [{"year": 1963, "event": "Philips présente la cassette compacte."}, {"year": 1979, "event": "Sony lance le Walkman TPS-L2."}]
+    },
+    {
+      "id": "walkman_portable",
+      "name": "Baladeur cassette (Walkman et équivalents)",
+      "category": "appareil_lecture",
+      "medium": "magnetique",
+      "introduced": 1979,
+      "popular_from": 1980,
+      "peak_period": "1980-1990",
+      "decline_period": "1998-2005",
+      "status_2026": "historique / collection",
+      "description": "Appareil portable qui transforme les usages en permettant d'écouter des cassettes en déplacement.",
+      "milestones": [{"year": 1979, "event": "Lancement du Sony Walkman TPS-L2 au Japon."}]
+    },
+    {
+      "id": "compact_disc",
+      "name": "CD audio",
+      "category": "support_physique",
+      "medium": "optique_numerique",
+      "introduced": 1982,
+      "popular_from": 1985,
+      "peak_period": "1990-2000",
+      "decline_period": "2002-2015",
+      "status_2026": "toujours commercialisé, en recul",
+      "description": "Disque optique numérique qui devient le principal format d'album grand public dans les années 1990.",
+      "milestones": [{"year": 1982, "event": "Commercialisation des premiers CD audio."}, {"year": 1985, "event": "Le CD commence à s'imposer auprès du grand public."}]
+    },
+    {
+      "id": "minidisc",
+      "name": "MiniDisc",
+      "category": "support_physique",
+      "medium": "optique_magnetique_numerique",
+      "introduced": 1992,
+      "popular_from": 1995,
+      "peak_period": "fin des années 1990-début 2000",
+      "decline_period": "2005-2010",
+      "status_2026": "historique / collection",
+      "description": "Petit support réinscriptible numérique développé par Sony, notamment utilisé pour l'écoute et l'enregistrement portable.",
+      "milestones": [{"year": 1992, "event": "Sony lance le MiniDisc."}]
+    },
+    {
+      "id": "mp3_download",
+      "name": "Fichiers MP3 et téléchargement",
+      "category": "distribution_numerique",
+      "medium": "fichier_numerique",
+      "introduced": 1993,
+      "popular_from": 1999,
+      "peak_period": "2000-2010",
+      "decline_period": "2010-2020",
+      "status_2026": "toujours utilisé",
+      "description": "Fichiers audio compressés, stockés sur ordinateur ou baladeur numérique et obtenus notamment par téléchargement.",
+      "milestones": [{"year": 1993, "event": "Standardisation du MPEG-1 Audio Layer III (MP3)."}, {"year": 1999, "event": "Les plateformes de partage de fichiers musicaux se popularisent."}, {"year": 2001, "event": "Lancement de l'iPod."}]
+    },
+    {
+      "id": "music_store_download",
+      "name": "Achat de musique en téléchargement",
+      "category": "distribution_numerique",
+      "medium": "fichier_numerique",
+      "introduced": 2003,
+      "popular_from": 2004,
+      "peak_period": "milieu-fin des années 2000",
+      "decline_period": "2010-2020",
+      "status_2026": "toujours disponible, usage réduit",
+      "description": "Achat de titres ou d'albums numériques auprès de boutiques en ligne.",
+      "milestones": [{"year": 2003, "event": "Lancement de l'iTunes Music Store aux États-Unis."}]
+    },
+    {
+      "id": "digital_audio_player",
+      "name": "Baladeur numérique",
+      "category": "appareil_lecture",
+      "medium": "fichier_numerique",
+      "introduced": 1998,
+      "popular_from": 2001,
+      "peak_period": "2000-2010",
+      "decline_period": "2010-2015",
+      "status_2026": "marché de niche",
+      "description": "Appareil portable stockant des fichiers audio numériques, popularisé par l'iPod et d'autres lecteurs MP3.",
+      "milestones": [{"year": 1998, "event": "Apparition de lecteurs MP3 portables commerciaux."}, {"year": 2001, "event": "Lancement de l'iPod."}]
+    },
+    {
+      "id": "music_streaming",
+      "name": "Streaming musical",
+      "category": "distribution_numerique",
+      "medium": "flux_en_ligne",
+      "introduced": 2000,
+      "popular_from": 2010,
+      "peak_period": "2015-2026",
+      "decline_period": None,
+      "status_2026": "usage dominant dans de nombreux marchés",
+      "description": "Écoute à la demande via Internet sans posséder une copie locale permanente de chaque titre.",
+      "milestones": [{"year": 2001, "event": "Développement des premiers services de musique en ligne à la demande."}, {"year": 2008, "event": "Lancement de Spotify en Europe."}, {"year": 2015, "event": "Le streaming prend une place centrale dans les revenus de la musique enregistrée."}]
+    },
+    {
+      "id": "smartphone_music",
+      "name": "Écoute sur smartphone",
+      "category": "appareil_lecture",
+      "medium": "numerique_connecte",
+      "introduced": 2007,
+      "popular_from": 2010,
+      "peak_period": "2015-2026",
+      "decline_period": None,
+      "status_2026": "usage courant",
+      "description": "Le smartphone devient un appareil central pour écouter des fichiers locaux et des services de streaming.",
+      "milestones": [{"year": 2007, "event": "Lancement du premier iPhone."}, {"year": 2008, "event": "Développement des applications mobiles de musique en streaming."}]
+    },
+    {
+      "id": "smart_speaker",
+      "name": "Enceintes connectées et assistants vocaux",
+      "category": "appareil_lecture",
+      "medium": "numerique_connecte",
+      "introduced": 2014,
+      "popular_from": 2017,
+      "peak_period": "2020-2026",
+      "decline_period": None,
+      "status_2026": "toujours en développement",
+      "description": "Écoute de musique via des enceintes connectées et commande vocale, souvent liées à un service de streaming.",
+      "milestones": [{"year": 2014, "event": "Lancement d'Amazon Echo."}, {"year": 2017, "event": "Les assistants vocaux se diffusent davantage dans les foyers."}]
+    }
+  ],
+  "timeline": [
+    {"year": 1877, "event": "Présentation du phonographe", "item_id": "phonograph_cylinder"},
+    {"year": 1890, "event": "Développement des disques plats 78 tours", "item_id": "shellac_78rpm"},
+    {"year": 1935, "event": "Développement des magnétophones à bande", "item_id": "reel_to_reel"},
+    {"year": 1948, "event": "Lancement du disque microsillon 33 tours", "item_id": "vinyl"},
+    {"year": 1963, "event": "Présentation de la cassette compacte", "item_id": "compact_cassette"},
+    {"year": 1979, "event": "Lancement du Sony Walkman", "item_id": "walkman_portable"},
+    {"year": 1982, "event": "Commercialisation du CD audio", "item_id": "compact_disc"},
+    {"year": 1992, "event": "Lancement du MiniDisc", "item_id": "minidisc"},
+    {"year": 1993, "event": "Standardisation du MP3", "item_id": "mp3_download"},
+    {"year": 2001, "event": "Lancement de l'iPod", "item_id": "digital_audio_player"},
+    {"year": 2003, "event": "Lancement de l'iTunes Music Store", "item_id": "music_store_download"},
+    {"year": 2008, "event": "Lancement de Spotify en Europe", "item_id": "music_streaming"},
+    {"year": 2014, "event": "Lancement d'Amazon Echo", "item_id": "smart_speaker"}
+  ],
+  "visualization_suggestions": [
+    {"id": "timeline", "type": "timeline", "title": "150 ans d'écoute musicale", "description": "Frise chronologique des inventions et lancements."},
+    {"id": "format_lifespan", "type": "range_bar", "title": "La durée de vie des supports", "description": "Comparer les périodes d'apparition, de popularité et de recul."},
+    {"id": "analog_digital", "type": "stacked_categories", "title": "De l'analogique au numérique", "description": "Classer les supports selon leur technologie."}
+  ],
+  "sources": [
+    {"name": "Library of Congress", "url": "https://www.loc.gov/collections/national-jukebox/articles-and-essays/history-of-the-cylinder-phonograph/", "use": "Histoire du phonographe et des cylindres."},
+    {"name": "Sony", "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/", "use": "Repères historiques des produits Sony, notamment Walkman et MiniDisc."},
+    {"name": "Philips", "url": "https://www.philips.com/a-w/about/news/archive.html", "use": "Histoire de la cassette compacte."},
+    {"name": "RIAA", "url": "https://www.riaa.com/data/", "use": "Données de ventes et de revenus pour le marché américain, utiles pour compléter la chronologie par des statistiques."},
+    {"name": "Spotify", "url": "https://newsroom.spotify.com/company-info/", "use": "Repères sur le lancement et l'histoire de Spotify."}
+  ]
+}
+
+json_path = "/mnt/data/evolution_supports_musicaux_1877_2026.json"
+with open(json_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print(json_path)
