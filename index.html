@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataviz</title>
+  <meta charset="UTF-8">
+  <title>DataViz Musique MMI - ListenBrainz</title>
+  <!-- Chargement de Chart.js via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    
+
+  <h2>Évolution des écoutes au fil de la journée</h2>
+  <!-- Emplacement du graphique -->
+  <div style="width: 800px; margin: auto;">
+    <canvas id="musicChart"></canvas>
+  </div>
+
+  <script>
+    async function initDataViz() {
+      // 1. Récupération des données depuis l'API officielle ListenBrainz
+      const username = 'rob'; // Utilisateur de test avec beaucoup d'écoutes
+      const response = await fetch(`https://api.listenbrainz.org/1/user/${username}/listens?count=100`);
+      const data = await response.json();
+
+      // 2. Traitement direct des données
+      const listens = data.payload.listens;
+
+      // Initialiser un tableau de 24 heures (de 0h à 23h) rempli de 0
+      const hoursCount = new Array(24).fill(0);
+
+      // Compter combien de morceaux ont été écoutés à chaque heure
+      listens.forEach(item => {
+        const date = new Date(item.listened_at * 1000);
+        const hour = date.getHours();
+        hoursCount[hour]++;
+      });
+
+      // 3. Injecter les données directes dans Chart.js
+      const ctx = document.getElementById('musicChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: Array.from({ length: 24 }, (_, i) => `${i}h`), // ['0h', '1h', ..., '23h']
+          datasets: [{
+            label: 'Nombre d\'écoutes par heure',
+            data: hoursCount, // Tes données traitées
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    // Lancer la visualisation au chargement de la page
+    initDataViz();
+  </script>
+
 </body>
 </html>
